@@ -1,0 +1,15 @@
+# Local runtime and build output
+.tmp/
+bin/
+.env
+
+
+# Load-test raw output (summary.json and similar)
+loadtest/results/*.json
+node_modules
+vendor
+target
+__pycache__
+*.tfstate
+.terraform
+.tmp

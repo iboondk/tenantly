@@ -1,0 +1,24 @@
+scalar UUID
+scalar Time
+
+type Project {
+  id: UUID!
+  tenantId: UUID!
+  name: String!
+  createdAt: Time!
+}
+
+type Tenant {
+  id: UUID!
+  name: String!
+}
+
+type Query {
+  projects(tenantId: UUID!, limit: Int = 50): [Project!]!
+  project(tenantId: UUID!, id: UUID!): Project
+}
+
+type Mutation {
+  createTenant(name: String!): Tenant!
+  createProject(tenantId: UUID!, name: String!): Project!
+}

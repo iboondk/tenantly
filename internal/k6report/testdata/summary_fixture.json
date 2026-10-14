@@ -1,0 +1,120 @@
+{
+  "_comment": "SYNTHETIC FIXTURE. These numbers are hand-written for unit tests of cmd/k6report. They are not a load-test result and must never be copied into loadtest/RESULTS.md.",
+  "metrics": {
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": { "count": 2200, "rate": 73.33 }
+    },
+    "http_reqs{name:list_projects}": {
+      "type": "counter",
+      "contains": "default",
+      "values": { "count": 700, "rate": 23.3 }
+    },
+    "http_reqs{name:get_project}": {
+      "type": "counter",
+      "contains": "default",
+      "values": { "count": 200, "rate": 6.67 }
+    },
+    "http_reqs{name:create_project}": {
+      "type": "counter",
+      "contains": "default",
+      "values": { "count": 100, "rate": 3.33 }
+    },
+    "http_reqs{name:cross_tenant_get}": {
+      "type": "counter",
+      "contains": "default",
+      "values": { "count": 1000, "rate": 33.33 }
+    },
+    "http_reqs{name:setup_dev_token}": {
+      "type": "counter",
+      "contains": "default",
+      "values": { "count": 10, "rate": 0.33 }
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": { "avg": 30.1, "min": 1.2, "med": 9.0, "max": 900.0, "p(50)": 9.0, "p(90)": 150.0, "p(95)": 210.0, "p(99)": 280.0 }
+    },
+    "http_req_duration{name:list_projects}": {
+      "type": "trend",
+      "contains": "time",
+      "values": { "avg": 40.0, "min": 2.0, "med": 10.0, "max": 500.0, "p(50)": 10.0, "p(90)": 120.0, "p(95)": 150.0, "p(99)": 210.0 }
+    },
+    "http_req_duration{name:get_project}": {
+      "type": "trend",
+      "contains": "time",
+      "values": { "avg": 25.0, "min": 1.0, "med": 8.0, "max": 300.0, "p(50)": 8.0, "p(90)": 100.0, "p(95)": 120.0, "p(99)": 190.0 }
+    },
+    "http_req_duration{name:create_project}": {
+      "type": "trend",
+      "contains": "time",
+      "values": { "avg": 90.0, "min": 5.0, "med": 20.0, "max": 800.0, "p(50)": 20.0, "p(90)": 250.0, "p(95)": 280.0, "p(99)": 295.0 }
+    },
+    "http_req_duration{name:cross_tenant_get}": {
+      "type": "trend",
+      "contains": "time",
+      "values": { "avg": 12.0, "min": 1.0, "med": 7.0, "max": 200.0, "p(50)": 7.0, "p(90)": 40.0, "p(95)": 60.0, "p(99)": 90.0 }
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0023, "passes": 2195, "fails": 5 }
+    },
+    "http_req_failed{name:list_projects}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0, "passes": 700, "fails": 0 }
+    },
+    "http_req_failed{name:get_project}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.005, "passes": 199, "fails": 1 }
+    },
+    "http_req_failed{name:create_project}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0, "passes": 100, "fails": 0 }
+    },
+    "http_req_failed{name:graphql_projects}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0, "passes": 0, "fails": 0 }
+    },
+    "http_req_failed{name:cross_tenant_get}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0, "passes": 1000, "fails": 0 }
+    },
+    "rate_limited": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0091, "passes": 2180, "fails": 20 }
+    },
+    "rate_limited{name:list_projects}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0, "passes": 700, "fails": 0 }
+    },
+    "rate_limited{name:get_project}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0, "passes": 200, "fails": 0 }
+    },
+    "rate_limited{name:create_project}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.02, "passes": 98, "fails": 2 }
+    },
+    "rate_limited{name:cross_tenant_get}": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.0, "passes": 1000, "fails": 0 }
+    },
+    "checks": {
+      "type": "rate",
+      "contains": "default",
+      "values": { "rate": 0.995, "passes": 4975, "fails": 25 }
+    }
+  }
+}
